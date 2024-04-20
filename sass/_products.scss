@@ -1,0 +1,91 @@
+.products {
+  &__title {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 0px 20px 0px;
+  }
+
+  &__btn {
+    padding: 8px 30px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__card {
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    width: 30%;
+    background: #f1f1ff;
+  }
+
+  &__card__imgs {
+    img {
+      width: 100%;
+      height: 250px;
+      background-color: #f1f1ff;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+
+  &__card__info {
+    padding: 20px;
+  }
+
+  &__card__btns {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  &__btn {
+    padding: 8px 30px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: 0.6s;
+  }
+
+  &__btn:hover {
+    background-color: white;
+    color: skyblue;
+  }
+
+  &__card__desc {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 900px) {
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+  @media (max-width: 630px) {
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+  }
+}
+
+select {
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 0px;
+  box-shadow: inset 0px 0px 5px rgb(212, 205, 205);
+}

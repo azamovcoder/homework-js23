@@ -2,18 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <title>Document</title>
 </head>
 
 <body>
+  <main>
+    <section class="container">
+      <div class="products__top">
+        <h1 class="products__title">Products</h1>
+        <div class="products__btns">
+          <button class="products__btn">AddProduct</button>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__title">Products</div>
+        <form action="">
+          <input required class="product__name" type="text" placeholder="Product name" />
+          <input required class="product__quantity" type="number" placeholder=" Product quantity" />
+          <select name="" class="product__unit" id="product__unit">
+            <option class="unit" value="kg">Kg</option>
+            <option class="unit" value="Liter">Liter</option>
+            <option class="unit" value="count">Count</option>
+          </select>
+          <input required class="product__price" type="text" placeholder="Product img" />
+          <input required class="product__img" type="number" placeholder="Product price" />
+        </form>
+        <div class="form__btns">
+          <button class="form__btn submit__btn ">Submit</button>
+          <button class=" form__btn delete__btn">Delete</button>
+        </div>
+      </div>
 
+      <div class="products">
+        <div class="products__cards"></div>
+      </div>
+    </section>
+  </main>
 
-    <h1>ADD CARD </h1>
-
-    <script type="module" src="js/index.js"></script>
+  <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>
