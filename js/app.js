@@ -30,7 +30,7 @@ function dateProductCards(products) {
           <p class="products__card__desc">price: ${product.price}</p>
         </div>
         <div class="products__card__btns">
-          <button class="products__btn">Submit</button>
+          <button class="products__btn">Edit</button>
           <button class="products__btn" name="delete" data-id="${product.id}">Delete</button>
         </div>
       </div>
