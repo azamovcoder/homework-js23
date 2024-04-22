@@ -75,6 +75,7 @@ let deleteBtn = (id) => {
   let index = prod.findIndex((u) => u.id === id);
   prod.splice(index, 1);
   dateProductCards(prod);
+  localStorage.setItem(Products, JSON.stringify(prod));
 };
 
 products.addEventListener("click", (e) => {
